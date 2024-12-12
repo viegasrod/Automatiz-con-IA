@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMATIZ - Reparación de Maquinaria Automotriz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/icono-de-vector-átomo-de-oro.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="/images/icono-de-vector-átomo-de-oro.png" alt="Logo de AUTOMATIZ" class="logo">
+                <h1>AUTOMATIZ</h1>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/servicios.html">Servicios</a></li>
+                <li><a href="/Nosotros.html">Nosotros</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o necesitas información? Completa el formulario y te contactaremos.</p>
+        <form id="contact-form" action="enviar.php" method="post">
+            <!-- Nombre -->
+            <label for="nombre">
+                <span>Nombre:</span>
+            </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            
+            <!-- Correo Electrónico -->
+            <label for="email">
+                <span>Correo Electrónico:</span>
+            </label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            
+            <!-- Checklist de intereses -->
+            <fieldset>
+                <legend>¿Qué deseas averiguar?</legend>
+                <label><input type="checkbox" name="interes" value="Alineadoras Inalámbricas"> Alineadoras Inalámbricas</label>
+                <label><input type="checkbox" name="interes" value="Elevadores Tijera"> Elevadores Tijera</label>
+                <label><input type="checkbox" name="interes" value="Desarmadoras Industriales"> Desarmadoras Industriales</label>
+                <label><input type="checkbox" name="interes" value="Elevadores Móviles"> Elevadores Móviles</label>
+                <label><input type="checkbox" name="interes" value="Balanceadoras Electrónicas"> Balanceadoras Electrónicas</label>
+                <label><input type="checkbox" name="interes" value="Elevador de 4 columnas"> Elevador de 4 columnas</label>
+                <label><input type="checkbox" name="interes" value="Otros"> Otros</label>
+            </fieldset>
+            
+            <!-- Mensaje -->
+            <label for="mensaje">
+                <span>Mensaje:</span>
+            </label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+            
+            <!-- Botón de envío -->
+            <button type="submit" id="submit-button">Enviar</button>
+        </form>
+    </section>
+
+   
+    <footer>
+                <p>© <a href="http://viegasrod.com" style="text-decoration: none; color: rgb(197, 178, 178);">viegasrod </a> 2024 AUTOMATIZ. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
